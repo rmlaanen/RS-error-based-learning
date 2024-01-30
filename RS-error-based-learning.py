@@ -28,7 +28,7 @@ from surprise import SVD, Reader, accuracy, Dataset
 os.chdir("...")
 
 # Load dataset
-data_pd = pd.read_csv("/Users/rico2/Desktop/Thesis/useritemmatrix.csv")
+data_pd = pd.read_csv("useritemmatrix.csv")
 
 # Rename columns to fit surprise package
 data_pd.rename(columns={'userId': 'user_id', 'itemId': 'item_id', 'interaction': 'raw_ratings'}, inplace=True)
